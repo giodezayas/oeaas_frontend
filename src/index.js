@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+import ScreenRecording from './ScreenRecording';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  
+  <ScreenRecording
+    screen={true}
+    audio={true}
+    video={true}
+    downloadRecordingPath="Captura"
+    downloadRecordingType=".mp4"
+    emailToSupport="support@xyz.com"
+  ></ScreenRecording>
+
   </React.StrictMode>
 );
 
